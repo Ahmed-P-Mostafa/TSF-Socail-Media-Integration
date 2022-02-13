@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1051249787711",
+    "project_id": "tsf-social-media-integra-a91c0",
+    "storage_bucket": "tsf-social-media-integra-a91c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051249787711:android:d371b986367fdde7a4098a",
+        "android_client_info": {
+          "package_name": "com.polotika.tsfsocialmediaintegration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051249787711-njiqchb1l1ipsnp8nospejpvmtevl868.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.polotika.tsfsocialmediaintegration",
+            "certificate_hash": "c3b15da070fa7473903f4294c7a383dbc60b146c"
+          }
+        },
+        {
+          "client_id": "1051249787711-4rf4fo1ifus28n2875ecodt1t1s20919.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW8SHw4sNG_BvA2hZJcjsLLEv9Vw5EgiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051249787711-4rf4fo1ifus28n2875ecodt1t1s20919.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

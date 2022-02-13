@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.polotika.tsfsocialmediaintegration.HomeViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity">
+
+        <ImageView
+            android:id="@+id/user_photo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHeight_max="150dp"
+            app:layout_constraintWidth_max="150dp"
+            bindImage="@{vm.userImage}"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:  "
+            app:layout_constraintBottom_toBottomOf="@id/user_name_tv"
+            app:layout_constraintEnd_toStartOf="@id/user_name_tv"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/user_name_tv" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/name_label"
+            app:layout_constraintTop_toBottomOf="@id/user_photo_iv"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="@{vm.userName}"
+            android:ellipsize="end"
+            tools:text="Username" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/user_email_tv"
+            app:layout_constraintBottom_toBottomOf="@id/user_email_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/user_email_tv"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:text="Email:  "/>
+
+        <TextView
+            android:id="@+id/user_email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/email_label"
+            app:layout_constraintTop_toBottomOf="@id/user_name_tv"
+            android:layout_marginTop="8dp"
+            android:text="@{vm.userEmail}"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="User Email"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
